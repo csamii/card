@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>card</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        .card {
+            position: relative;
+            width: 330px;
+            height: auto;
+            background: #26335D;
+            padding: 8px 5px;
+        }
+        
+        .card_section_a {
+            position: relative;
+            height: 200px;
+        }
+        
+        .img {
+            position: absolute;
+            width: 330px;
+            height: 216px;
+            object-fit: cover;
+        }
+        
+        .sale {
+            position: absolute;
+            background: #EA3E43;
+            color: #fff;
+            padding: 2px 8px;
+            margin: 15px;
+            letter-spacing: 1px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        
+        .icons {
+            position: absolute;
+            bottom: 0;
+            left: 34%;
+            display: flex;
+        }
+        
+        .icon_box {
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            font-size: 12px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.5s ease-in;
+        }
+        
+        .icon_box i {
+            font-size: 15px;
+        }
+        
+        .second {
+            margin: 0 10px;
+        }
+        
+        .icon_box:hover {
+            background: #000;
+            color: #fff
+        }
+        
+        .card_section_b {
+            background: #fff;
+            padding: 20px;
+        }
+        
+        .card_b_head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .card_b_head p {
+            color: #9066F0;
+            font-weight: bold;
+        }
+        
+        .star_icon {
+            background: #26335F;
+            font-size: 12px;
+            padding: 5px 7px;
+            color: #fff;
+            border-radius: 15px;
+        }
+        
+        .fa-star {
+            color: #FCCA45;
+        }
+        
+        .card_b_head_b h5 {
+            margin: 0;
+            color: #2B2C3D;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        
+        .card_b_head_b p {
+            color: #8F8F8F;
+            font-weight: 500;
+        }
+        
+        .card_b_head_c {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .fa-download {
+            color: #878787;
+        }
+        
+        .card_b_head_c p {
+            margin: 0;
+            color: #878787;
+            font-weight: bolder;
+        }
+        
+        .card_b_span {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .span_a {
+            color: #878787;
+        }
+        
+        .span_b {
+            color: #FF7566;
+        }
+        
+        .buttonContainer {
+            position: relative;
+            width: max-content;
+            height: auto;
+            animation: fadeInUp 1s ease-out 3s forwards;
+        }
+        
+        .buttonContainer button {
+            cursor: pointer;
+            color: #A283F8;
+            border: 1px solid #A283F8;
+            outline: none;
+            padding: 7px 15px;
+            background: transparent;
+            font-weight: bold;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .wdth {
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background-color: #A283F8;
+            top: 0;
+            left: 0;
+            transition: 0.5s ease-in-out;
+            z-index: -1;
+        }
+        
+        .wdth1 {
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background-color: #A283F8;
+            top: 0;
+            right: 0;
+            transition: 0.5s ease-in-out;
+            z-index: -1;
+        }
+        
+        .buttonContainer:hover .wdth {
+            width: 50%;
+            border-radius: 20px 0 0 20px;
+        }
+        
+        .buttonContainer:hover .wdth1 {
+            width: 50%;
+            border-radius: 0 20px 20px 0;
+        }
+        
+        .buttonContainer:hover button {
+            color: white;
+            font-weight: 600;
+            border: none;
+        }
+        /* button {
+            
+        } */
+        
+        .fa-angle-right {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card_section_a">
+            <img src="images/pen.jpg" class="img" />
+            <div class="sale">sale</div>
+            <div class="icons">
+                <div class="icon_box"><i class="fa fa-heart ic" aria-hidden="true"></i></div>
+                <div class="icon_box second"><i class="fa fa-shopping-cart ic" aria-hidden="true"></i></div>
+                <div class="icon_box"><i class="fa fa-eye ic" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <div class="card_section_b">
+            <div class="card_b_head">
+                <p>welcome</p>
+                <div class="star_icon">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <span>4.9</span>
+                </div>
+            </div>
+            <div class="card_b_head_b">
+                <h5>2,769 online courses</h5>
+                <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away</p>
+            </div>
+            <div class="card_b_head_c">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                <p>15 Sales</p>
+            </div>
+            <div class="card_b_span">
+                <span class="span_a">$16.48</span>&nbsp;
+                <span class="span_b">$6.48</span>
+            </div>
+            <div class="buttonContainer">
+                <button>Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                <div class="wdth"></div>
+                <div class="wdth1"></div>
+            </div>
+            <!-- <button>Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></button> -->
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/dc18c7b3e7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
